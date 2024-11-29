@@ -1,62 +1,98 @@
-/* Estilo global */
+/* Estilo Global */
 body {
-  font-family: 'Roboto', Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
   margin: 0;
   padding: 0;
-}
-
-/* Estilo do cabeçalho */
-header {
-  text-align: center;
-  background-color: #007bff;
-  color: white;
-  padding: 2rem 0;
-  margin-bottom: 2rem;
-}
-
-header h1 {
-  font-size: 2.5rem;
-}
-
-header p {
-  font-size: 1.2rem;
-}
-
-/* Estilo da seção de projetos */
-section#projects {
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2rem;
   color: #333;
 }
 
-/* Estilo dos cartões de projeto */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  float: left;
+}
+
+header nav ul {
+  list-style: none;
+  float: right;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Seção Hero */
+#hero {
+  text-align: center;
+  padding: 6rem 0 4rem;
+  background-color: #007bff;
+  color: white;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+}
+
+/* Sobre Mim */
+#about {
+  padding: 4rem 0;
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Projetos */
+#projects {
+  padding: 4rem 0;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 #project-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .project-card {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 8px;
-  margin: 1rem;
-  padding: 1rem;
-  width: 100%;
-  max-width: 300px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h3 {
@@ -64,35 +100,25 @@ h2 {
   color: #007bff;
 }
 
-.project-card p {
-  color: #555;
-}
-
-/* Estilo dos links */
 .project-card a {
-  display: inline-block;
-  margin-top: 1rem;
   color: #007bff;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.project-card a:hover,
-.project-card a:focus {
-  text-decoration: underline;
-  color: #0056b3;
-}
-
-/* Estilo do rodapé */
+/* Rodapé */
 footer {
-  text-align: center;
-  padding: 1rem;
   background-color: #007bff;
   color: white;
-  margin-top: 2rem;
+  padding: 2rem 0;
+  text-align: center;
 }
 
-footer a {
-  color: white;
-  text-decoration: underline;
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
 }
