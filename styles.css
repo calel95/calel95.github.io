@@ -1,25 +1,41 @@
+/* Estilo global */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
 
+/* Estilo do cabeçalho */
 header {
   text-align: center;
   background-color: #007bff;
   color: white;
   padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Estilo da seção de projetos */
 section#projects {
   padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
   text-align: center;
+  font-size: 2rem;
+  color: #333;
 }
 
+/* Estilo dos cartões de projeto */
 #project-list {
   display: flex;
   flex-wrap: wrap;
@@ -32,17 +48,51 @@ h2 {
   border-radius: 8px;
   margin: 1rem;
   padding: 1rem;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h3 {
   margin-top: 0;
+  color: #007bff;
 }
 
+.project-card p {
+  color: #555;
+}
+
+/* Estilo dos links */
+.project-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover,
+.project-card a:focus {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Estilo do rodapé */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #007bff;
   color: white;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
 }
