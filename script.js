@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Lista de projetos com nome, descrição e link
   const projects = [
     {
-      name: "CRUD",
-      description: "CRUD - app de cadastro de produto",
+      name: "CRUD - Cadastro de produtos",
+      description: "Descrição breve do projeto 1.",
       link: "https://github.com/calel95/primeiro_crud"
     },
     {
-      name: "App de sorteio de rifa",
-      description: "Sistema de sorteio de rifa",
+      name: "Sistema de sorteio de rifa",
+      description: "Descrição breve do projeto 2.",
       link: "https://github.com/calel95/sistema_de_rifa"
     },
     {
       name: "ETL Dinâmico",
-      description: "Sistema de ETL com frontend, onde usuario escolhe operacoes de tratamento que deseja no dataframe",
+      description: "Descrição breve do projeto 3.",
       link: "https://github.com/calel95/sistema_ETL"
     }
   ];
@@ -26,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     projectCard.innerHTML = `
       <h3>${project.name}</h3>
       <p>${project.description}</p>
-      <a href="${project.link}" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+      <a href="${project.link}" target="_blank">Ver no GitHub</a>
     `;
     projectList.appendChild(projectCard);
   });
