@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       name: "Projeto 1",
       description: "Descrição breve do projeto 1.",
-      link: "https://github.com/seu-usuario/projeto1"
+      link: "https://github.com/calel95/primeiro_crud"
     },
     {
       name: "Projeto 2",
       description: "Descrição breve do projeto 2.",
-      link: "https://github.com/seu-usuario/projeto2"
+      link: "https://github.com/calel95/sistema_de_rifa"
     }
   ];
 
